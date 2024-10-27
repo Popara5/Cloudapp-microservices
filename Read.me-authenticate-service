@@ -1,0 +1,36 @@
+# Authentication Service
+
+The Authentication Service is a Laravel-based microservice in the CloudSync application that handles user authentication, registration, and front-end UI components. It enables secure user management and provides an interface for users to interact with other services.
+
+## Table of Contents
+- [Overview](#overview)
+- [Technologies Used](#technologies-used)
+- [Setup and Installation](#setup-and-installation)
+- [Running the Service](#running-the-service)
+- [API Endpoints](#api-endpoints)
+- [Testing](#testing)
+- [Docker](#docker)
+- [CI/CD Integration](#cicd-integration)
+
+## Overview
+The Authentication Service manages user accounts, providing endpoints for user login, registration, and profile management. This service also includes the front-end interface that integrates with the other CloudSync components.
+
+## Technologies Used
+- **Laravel**: PHP framework for web applications
+- **Blade**: Templating engine for Laravel
+- **Docker**: Containerizes the service for consistency across environments
+- **SonarCloud**: Integrated for code quality and coverage checks
+- **GitHub Actions**: CI/CD pipeline for automated testing and deployment
+
+## Setup and Installation
+
+### Prerequisites
+- **PHP**: Version 8.0 or higher
+- **Composer**: Dependency manager for PHP
+- **Docker** (optional, for containerized deployment)
+
+### Installation
+1. **Clone the repository** and navigate to the `authentication-service` directory:
+   ```bash
+   git clone https://github.com/your-username/CloudSync.git
+   cd CloudSync/authentication-service
