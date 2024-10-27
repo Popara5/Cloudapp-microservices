@@ -1,0 +1,14 @@
+const socket = new WebSocket('ws://localhost:3000/connect');
+
+socket.onopen = () => {
+  console.log('Connected to the real-time service');
+  socket.send(JSON.stringify({ type: 'subscribe', topic: 'data-updates' }));
+};
+
+socket.onmessage = (message) => {
+  console.log('Received:', message.data);
+};
+
+socket.onclose = () => {
+  console.log('Connection closed');
+};
