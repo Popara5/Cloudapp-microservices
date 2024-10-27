@@ -1,0 +1,36 @@
+# Real-Time Service
+
+The Real-Time Service is a Node.js-based microservice in the CloudSync application, responsible for handling real-time data streaming and notifications. It establishes WebSocket connections with clients to provide live updates and data synchronization across the application.
+
+## Table of Contents
+- [Overview](#overview)
+- [Technologies Used](#technologies-used)
+- [Setup and Installation](#setup-and-installation)
+- [Running the Service](#running-the-service)
+- [API and WebSocket Endpoints](#api-and-websocket-endpoints)
+- [Testing](#testing)
+- [Docker](#docker)
+- [CI/CD Integration](#cicd-integration)
+
+## Overview
+The Real-Time Service uses WebSockets to provide real-time updates for the CloudSync application. This enables seamless communication and data sharing between clients, offering a more interactive and responsive user experience.
+
+## Technologies Used
+- **Node.js**: Core runtime environment
+- **Express**: Lightweight framework for building REST APIs
+- **WebSocket**: Enables real-time, bidirectional communication
+- **Docker**: Containerizes the service for consistency across environments
+- **SonarCloud**: Integrated for code quality and coverage checks
+- **GitHub Actions**: CI/CD pipeline for automated testing and deployment
+
+## Setup and Installation
+
+### Prerequisites
+- **Node.js**: Version 14.x or higher
+- **Docker** (optional, for containerized deployment)
+
+### Installation
+1. **Clone the repository** and navigate to the `real-time-service` directory:
+   ```bash
+   git clone https://github.com/your-username/CloudSync.git
+   cd CloudSync/real-time-service
